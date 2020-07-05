@@ -31,7 +31,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  plyq
 
 # Build settings
+remote_theme: b2a3e8/jekyll-theme-console
 theme: jekyll-theme-console
+
 style: light
 header_pages:
   - index.md
