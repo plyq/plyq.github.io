@@ -17,12 +17,12 @@ permalink: /cv/
 ## Experience
 
 ### Particle.One
-#### Python Developer, January 2017 — October 2020
+#### Python Developer, October 2020 — now
 [particle.one](http://particle.one)
 
 `python` `linux` `pytest` `git` `docker`
 
-* Developing an environment for data scientists
+* Developing the environment for data scientists
 * Developing data pipelines
 
 ### Big Data Solutions (OneTick)
