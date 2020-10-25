@@ -15,4 +15,4 @@ description: Hi! My name is Artem. My passion is to solve puzzles. I was an IMO 
 * *'17:* started my dev :computer: way at [**BDS**](http://bigdatasolutions.ru), a part of [**OneTick**](http://onetick.com)
 * *'18:* became a lead :briefcase: developer in the main product team 
 * *'19:* became a :baby: dad
-* *'20:* deployed our product to NYSE, and go to [**Particle.One**](http://particle.one) for new :flashlight: adventures 
+* *'20:* deployed our product to NYSE, and went to [**Particle.One**](http://particle.one) for new :flashlight: adventures 
