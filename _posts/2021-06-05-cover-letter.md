@@ -14,7 +14,7 @@ _Hi!_
 
 _I am Artem. I was a math olympian at the past and became to be a super python engineer now. The future is vague, but in the far distance I see a logo of one US high-salary smart-employees company is shining._
 
-_Why super, you ask? When I was almost 0 in programming, year later I became a team lead of the head company product. Or when somebody asked me to add some API with Flask and add some filters with Vue.js to the web app – no problem – next day and we are here. (Oh forgot to say, I didn’t know what is Flask and Vue.js until that moment). I don’t know tons of frameworks, but I believe that 2 days are enough to write something with any framework. _
+_Why super, you ask? When I was almost 0 in programming, year later I became a team lead of the head company product. Or when somebody asked me to add some API with Flask and add some filters with Vue.js to the web app – no problem – next day and we are here. (Oh forgot to say, I didn’t know what is Flask and Vue.js until that moment). I don’t know tons of frameworks, but I believe that 2 days are enough to write something with any framework._
 
 _Why future is vague, you ask? Because if it will be only my decision to decide should I work with you or not, your logo could be much brighter in this vague._
 
