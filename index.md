@@ -16,4 +16,4 @@ description: Hi! My name is Artem. My passion is to solve puzzles. I was an IMO 
 * *'18:* became a lead :briefcase: developer in the main product team 
 * *'19:* became a :baby: dad
 * *'20:* deployed our product to NYSE, and went to [**Particle.One**](http://particle.one) for new :flashlight: adventures 
-* *'21:* one adventure was finished :no_entry_sign:, another is started with [**Rialtic**](http://particle.one)
+* *'21:* one adventure was finished :no_entry_sign:, another is started with [**Rialtic**](https://rialtic.io)
