@@ -3,7 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: page
-title: Developer
+title: Senior Python Developer
 topmenu: 3#/cv
 permalink: /cv/
 ---
