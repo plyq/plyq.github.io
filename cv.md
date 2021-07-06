@@ -48,12 +48,10 @@ permalink: /cv/
 
 `python` `pytest` `onetick` `git` `linux`
 
-* Developed the project to find suspicious trading
+* Developed the product to find suspicious trading
+* It used by top-1 stock exchange
 * Led small dev team
-* Deployed the product to the top-1 stock exchange in the world
-* Scrum/Agile - like methodology
 * Code review
-* Design sessions
 * Communication with customers
 
 ##### Product started from "a set of perl scripts with onetick". I left it when it used a set of actual technologies, migrated to cloud, was used by 10+ customers. I was not a guy who trigger ideas, but was a guy who helped to realize them and understand how to do it in the best way.
