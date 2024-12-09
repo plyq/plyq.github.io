@@ -45,24 +45,43 @@ const get_compliment = () => {
 }
 
 const change = () => {
+    index = Math.floor(Math.random() * 2);
     if (index === 0) {
-        ksage.textContent = 'Ща узнаем сколько Ксении лет...';
-    }
-    else if (index === 1) {
         ksage.innerHTML = get_age();
     }
     else {
         ksage.innerHTML = get_compliment();
     }
-    index = Math.floor(Math.random() * 3) + 1;
-    setTimeout(change, 5000);
 }
+
+const canvas = document.getElementById('photo');
+const captureBtn = document.getElementById('capture-btn');
+const context = canvas.getContext('2d');
+let is_video = true;
+
+captureBtn.addEventListener('click', () => {
+    if (is_video) {
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        context.drawImage(video, 0, 0, canvas.width, canvas.height);
+        video.hidden = true;
+        canvas.hidden = false;
+        captureBtn.textContent = 'Еще раз';
+        change();
+    }
+    else {
+        canvas.hidden = true;
+        video.hidden = false;
+        captureBtn.textContent = 'Узнать';
+        ksage.textContent = 'Ща узнаем сколько Ксении лет...';
+    }
+    is_video = !is_video;
+});
 
 // Request access to the user's camera
 navigator.mediaDevices.getUserMedia({ video: true })
     .then((stream) => {
         video.srcObject = stream;
-        change();
     })
     .catch((error) => {
         console.error("Error accessing the camera: ", error);
