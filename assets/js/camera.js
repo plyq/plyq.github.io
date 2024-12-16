@@ -4,12 +4,14 @@ const ksage = document.getElementById('ksage');
 
 let index = 0
 const andryuhas = [
-    'ты четкая',
-    'шутки смешные в более чем 20% - респект',
-    'дочь у тебя четкая',
-    'мама из тебя четкая',
-    'не, ну больше 25 не дать',
-    'да все и так понятно',
+    'четкая',
+    'шутки смешные',
+    'мать года',
+    'больше 25 не дать',
+    'все и так понятно',
+    'красивая',
+    'веселая',
+    'умная',
 ]
 const kiras = [
     'готовь супчик почаще',
@@ -41,7 +43,7 @@ const get_compliment = () => {
         return 'Дочь передает: ' + kiras[number];
     }
     let number = Math.floor(Math.random() * andryuhas.length);
-    return 'Непонятно, но комплиментик от Андрюши: ' + andryuhas[number];
+    return 'Непонятно, но комплиментик от Андрюшки: ' + andryuhas[number];
 }
 
 const change = () => {
@@ -73,7 +75,7 @@ captureBtn.addEventListener('click', () => {
         canvas.hidden = true;
         video.hidden = false;
         captureBtn.textContent = 'Узнать';
-        ksage.textContent = 'Ща узнаем сколько Ксении лет...';
+        ksage.textContent = 'Волшебное зеркальце умеет определять возраст';
     }
     is_video = !is_video;
 });
