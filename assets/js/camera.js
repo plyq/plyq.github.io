@@ -75,7 +75,7 @@ captureBtn.addEventListener('click', () => {
         canvas.hidden = true;
         video.hidden = false;
         captureBtn.textContent = 'Узнать';
-        ksage.textContent = 'Волшебное зеркальце умеет определять возраст';
+        ksage.textContent = 'Ща узнаем сколько Ксении лет...';
     }
     is_video = !is_video;
 });
