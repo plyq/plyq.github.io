@@ -1,0 +1,53 @@
+<div class="mem-container">
+<center>
+    <h1 id="mheader" hidden="true">choose one</h1>
+    <div class="canvas-container" id="mem-container" hidden="false">
+        <div class="canvas-wrapper">
+            <canvas id="mem1" class="mem-canvas" style="border: 1px solid black;"></canvas>
+        </div>
+        <div class="canvas-wrapper">
+            <canvas id="mem2" class="mem-canvas" style="border: 1px solid black;"></canvas>
+        </div>
+    </div>
+    <canvas id="memwinner" align="center" class="winner-canvas" style="border: 1px solid black;" hidden="true"></canvas>
+    {% assign image_files = site.static_files | where: "mem", true %}
+    {% assign images_paths_str = "" %}
+    {% for myimage in image_files %}
+        {% assign images_paths_str = images_paths_str | append: myimage.path | append: "," %}
+    {% endfor %}
+    <script id="memgen" imgsdata="{{ images_paths_str }}" src="{{ site.baseurl }}{% link assets/js/mem_battle.js %}"></script>
+</center>
+</div>
+
+<style>
+
+.mem-container {
+    display: grid;
+    width: 90%;
+}
+
+.canvas-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.canvas-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mem-canvas {
+    width: 100%;
+    height: auto;
+}
+
+.winner-canvas {
+    width: 50%;
+    height: auto;
+}
+</style>
+
