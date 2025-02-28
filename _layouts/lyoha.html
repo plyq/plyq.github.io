@@ -1,6 +1,5 @@
 <div class="mem-container">
 <center>
-    <h1 id="mheader">choose one</h1>
     <div class="canvas-container" id="mem-container" hidden="false">
         <div class="canvas-wrapper">
             <canvas id="mem1" class="mem-canvas" style="border: 1px solid black;"></canvas>
@@ -10,6 +9,8 @@
         </div>
     </div>
     <canvas id="memwinner" align="center" class="winner-canvas" style="border: 1px solid black;" hidden="true"></canvas>
+    <h1 id="mheader">choose one</h1>
+
     {% assign image_files = site.static_files | where: "mem", true %}
     {% assign images_paths_str = "" %}
     {% for myimage in image_files %}
@@ -41,7 +42,6 @@
 }
 
 .mem-canvas {
-    width: 100%;
     height: auto;
 }
 
