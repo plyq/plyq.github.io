@@ -31,7 +31,6 @@ const showImages = () => {
             memwinner.height = memwinner.width * aspectRatio;
             contextWinner.drawImage(img, 0, 0, memwinner.width, memwinner.height);
         };
-        mheader.hidden = false;
         return;
     }
 
@@ -42,14 +41,12 @@ const showImages = () => {
     img1.src = candidates[index1];
     img2.src = candidates[index2];
     img1.onload = () => {
-        context1.clearRect(0, 0, mem1.width, mem1.height);
         const aspectRatio1 = img1.height / img1.width;
         mem1.height = window.innerHeight * 0.8; // Set canvas height to 80% of viewport height
         mem1.width = mem1.height / aspectRatio1;
         context1.drawImage(img1, 0, 0, mem1.width, mem1.height);
     };
     img2.onload = () => {
-        context2.clearRect(0, 0, mem2.width, mem2.height);
         const aspectRatio2 = img2.height / img2.width;
         mem2.height = window.innerHeight * 0.8; // Set canvas height to 80% of viewport height
         mem2.width = mem2.height / aspectRatio2;
@@ -61,6 +58,8 @@ const showImages = () => {
 };
 
 const selectImage = (selectedIndex, notSelectedIndex) => {
+    context1.clearRect(0, 0, mem1.width, mem1.height);
+    context2.clearRect(0, 0, mem2.width, mem2.height);
     candidates.splice(notSelectedIndex, 1);
     showImages();
 };
